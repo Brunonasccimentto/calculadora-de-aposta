@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de apostas</title>
+    <link href="./style.css" rel="stylesheet">
+
+    <script>
+
+// var valor1 = parseInt (prompt("valor da aposta"));
+// var odd1 = prompt("Odd")
+// var aposta1 = valor1 * odd1;
+
+// console.log(aposta1);
+
+// var odd2 = prompt("odd")
+// var ganhosEstimados = aposta1
+// var valor2 = (ganhosEstimados / odd2);
+// var valor2Formatado = parseFloat (valor2.toFixed(2)) ;
+
+// console.log(valor1);
+// console.log(valor2Formatado);
+
+// var lucro = ganhosEstimados - (parseInt (valor1) + valor2Formatado);
+
+// console.log (lucro.toFixed(2))
+        
+        function change1(){
+
+            let input1 = document.getElementById("input1")
+            let valor1 = document.getElementById("valor1")
+            valor1.innerText = input1.value;
+            valor1 = input1.value
+
+            let input2 = document.getElementById("input2")
+            let odd1 = document.getElementById("odd1")
+            odd1.innerText = input2.value;
+
+            let aposta1 = document.getElementById("aposta1")
+            aposta1.innerText = parseFloat((input1.value * input2.value).toFixed(2))
+
+            aposta1 = parseFloat((input1.value * input2.value).toFixed(2))
+
+            let input3 = document.getElementById("input3")
+            let odd2 = document.getElementById("odd2")
+            odd2.innerText = input3.value;
+            odd2 = input3.value
+
+            let valor2 = document.getElementById("valor2")
+            valor2.innerText = parseFloat((aposta1 / odd2).toFixed(2))
+            valor2 = parseFloat((aposta1 / odd2).toFixed(2))
+
+            let lucro = document.getElementById("profit")
+            lucro.innerText = (aposta1 - (parseInt(valor1) + valor2)).toFixed(2)
+            
+        
+        }
+
+       
+        
+        
+
+
+</script>
+
+</head>
+
+<body>
+
+    <span id="valor1"></span>
+    <input type="number" id="input1" placeholder="aposta" oninput="change1()"> 
+    <span id="odd1"> </span>  
+    <input type="number" id="input2" placeholder="odd" onchange="change1()"> 
+    <span id="aposta1"> </span>
+    <br>
+
+    <span id="odd2"></span>
+    <input type="number" id="input3" placeholder="odd" onchange="change1()">
+    <span id="valor2"></span>
+
+    <h3> lucro = </h3>
+    <span id="profit"> </span>
+
+
+
+    
+
+</body>
+</html>
