@@ -9,83 +9,100 @@
 
     <script>
 
-// var valor1 = parseInt (prompt("valor da aposta"));
-// var odd1 = prompt("Odd")
-// var aposta1 = valor1 * odd1;
+function changeZero(){
 
-// console.log(aposta1);
+let inputZero1 = document.getElementById("inputZero1").value;
+let valorZero = document.getElementById("valorZero");
+valorZero.innerText = inputZero1;
 
-// var odd2 = prompt("odd")
-// var ganhosEstimados = aposta1
-// var valor2 = (ganhosEstimados / odd2);
-// var valor2Formatado = parseFloat (valor2.toFixed(2)) ;
+let inputZero2 = document.getElementById("inputZero2").value;
+let odd0 = document.getElementById("odd0");
+odd0.innerText = inputZero2;
 
-// console.log(valor1);
-// console.log(valor2Formatado);
+let apostaZero = document.getElementById("apostaZero");
+apostaZero.innerText = parseFloat((inputZero1 * inputZero2).toFixed(2))
 
-// var lucro = ganhosEstimados - (parseInt (valor1) + valor2Formatado);
+apostaZero = parseFloat((inputZero1 * inputZero2).toFixed(2))
 
-// console.log (lucro.toFixed(2))
-        
-        function change1(){
+}
 
-            let input1 = document.getElementById("input1")
-            let valor1 = document.getElementById("valor1")
-            valor1.innerText = input1.value;
-            valor1 = input1.value
+function changeZero2(){
 
-            let input2 = document.getElementById("input2")
-            let odd1 = document.getElementById("odd1")
-            odd1.innerText = input2.value;
+    let inputZero1 = document.getElementById("inputZero1").value
+    let valorZero = document.getElementById("valorZero").value
+    let inputZero3 = document.getElementById("inputZero3").value
+    let odd02 = document.getElementById("odd02");
+    odd02.innerHTML = inputZero3
+    
+    let p = document.getElementById("apostar0")
 
-            let aposta1 = document.getElementById("aposta1")
-            aposta1.innerText = parseFloat((input1.value * input2.value).toFixed(2))
+    let y = 0
+    
 
-            aposta1 = parseFloat((input1.value * input2.value).toFixed(2))
+    
 
-            let input3 = document.getElementById("input3")
-            let odd2 = document.getElementById("odd2")
-            odd2.innerText = input3.value;
-            odd2 = input3.value
-
-            let valor2 = document.getElementById("valor2")
-            valor2.innerText = parseFloat((aposta1 / odd2).toFixed(2))
-            valor2 = parseFloat((aposta1 / odd2).toFixed(2))
-
-            let lucro = document.getElementById("profit")
-            lucro.innerText = (aposta1 - (parseInt(valor1) + valor2)).toFixed(2)
-            
-        
-        }
-
-       
-        
-        
-
-
-</script>
+}
+    </script>
 
 </head>
 
 <body>
+    <script src="script.js"></script>
 
-    <span id="valor1"></span>
-    <input type="number" id="input1" placeholder="aposta" oninput="change1()"> 
-    <span id="odd1"> </span>  
-    <input type="number" id="input2" placeholder="odd" onchange="change1()"> 
-    <span id="aposta1"> </span>
-    <br>
+<header>
+    <h1> Calculadora de apostas</h1>
+    <h2> saiba quanto apostar para sair ganhando em ambos resultados</h2>
+</header>
 
-    <span id="odd2"></span>
-    <input type="number" id="input3" placeholder="odd" onchange="change1()">
-    <span id="valor2"></span>
+    <div class="conteiner">
 
-    <h3> lucro = </h3>
-    <span id="profit"> </span>
+        <h3 id="calcTitle"> Calculadora win/win</h3>
+        <p id="prob"> probabilidade </p>
+        <span id="valor1"></span>
+        <input type="number" id="input1" placeholder="aposta" oninput="change1()"> 
+        <span id="odd1"> </span>
+        <input type="number" id="input2" placeholder="odd" onchange="probability1()" oninput="change1()"> =
+        
+        <span id="aposta1"> </span>
+        <span class="probability"> </span> <br>
+        <p id="valor2">0</p>
 
-
-
+        <span id="odd2"></span>
+        <input type="number" id="input3" placeholder="odd" onchange="probability2()" oninput="change2(), aposta2()"> =
+        <span id="aposta2"> </span>
+        <span class="probability"></span>
     
+        <h3 id="profit"> Lucro = <span id="result"> </span> </h3>
+        
+    
+    </div>
+<br>
+    <div class="conteiner">
+        <h3> Calculadora lose/zero </h3>
+        <span id="valorZero"></span>
+        <input type="number" id="inputZero1" placeholder="aposta" oninput="changeZero()"> 
+        <span id="odd0"></span>
+        <input type="number" id="inputZero2" placeholder="odd" oninput="changeZero()"> =
+        
+        <span id="apostaZero"> </span> <br>
 
+        <p id="apostar0"> valor x </p>
+        <span id="odd02"></span>
+        <input type="number" id="inputZero3" placeholder="odd" onchange="changeZero2()"> = 
+
+        <h3 id="profit0"> Lucro = <span id="result0"> </span> </h3>
+
+
+    </div>
+
+    <div>
+    <h4> Como funciona a calculadora win/win ?</h4>
+    <p> A calculadora win/win serve para calcular qual o valor necessario para apostar no segundo time e sair ganhando em ambos os resultados.    </p>
+    
+    
+    <p> Não indicado em apostas de modelo 1x2</p>
+
+    </div>
 </body>
+
 </html>

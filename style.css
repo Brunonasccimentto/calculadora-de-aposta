@@ -1,12 +1,92 @@
 
-#valor1{
+
+#valor1, #odd1, #odd2, #valorZero, #odd0, #odd02{
     display: none;
 }
 
-#odd1{
-    display: none;
+#valor2, #apostar0{
+    background-color: white;
+    padding: 2.25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 4px;
+    display: inline-block;
+    width: 105.5px;
+    color: black;
+    border-radius: 20px;
+
 }
 
-#odd2{
-    display: none;
+.conteiner{
+
+    border:2px solid black;
+    border-radius: 10px;
+    width: 540px;
+    margin: auto;
+    font-size: 14px;
+    font-family: cursive;
+    background-color: rgb(104, 172, 41);
+    color: white;
+    background-image: url(./images/apostas-esportivas-2019-638x338.jpg);
+    background-repeat: no-repeat;
+    
 }
+
+#aposta1, #aposta2{
+
+    margin-left: 4%;
+}
+
+#result, #result0{
+    display: inline-block;
+    background-color: white;
+
+}
+#calcTitle{
+    display: inline-block;
+}
+
+
+
+input{
+    padding: 3px;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    width: 100px;
+    margin-top: 30px;
+    font-family: cursive;
+    border-radius: 20px;
+    
+    
+}
+
+#profit, #profit0{
+    padding-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+}
+
+#result{
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+#prob{
+    display: inline-block;
+    margin-left: 260px;
+    font-size: 15px;
+}
+
+.probability{
+    margin-left: 130px;;
+}
+
+
+
+
+
+
+
+
+
