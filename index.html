@@ -39,9 +39,12 @@ function changeZero2(){
     let y = 0
     
 
+    let input3 = document.getElementById("input3").value
     
 
 }
+
+
     </script>
 
 </head>
@@ -57,18 +60,18 @@ function changeZero2(){
     <div class="conteiner">
 
         <h3 id="calcTitle"> Calculadora win/win</h3>
-        <p id="prob"> probabilidade </p>
+        <p id="prob"> Probabilidade </p>
         <span id="valor1"></span>
         <input type="number" id="input1" placeholder="aposta" oninput="change1()"> 
         <span id="odd1"> </span>
-        <input type="number" id="input2" placeholder="odd" onchange="probability1()" oninput="change1()"> =
+        <input type="number" id="input2" placeholder="odd" oninput="change1(), probability1()"> =
         
         <span id="aposta1"> </span>
         <span class="probability"> </span> <br>
         <p id="valor2">0</p>
 
         <span id="odd2"></span>
-        <input type="number" id="input3" placeholder="odd" onchange="probability2()" oninput="change2(), aposta2()"> =
+        <input type="number" id="input3" placeholder="odd"  oninput="change2(), aposta2(), probability2()"> =
         <span id="aposta2"> </span>
         <span class="probability"></span>
     
@@ -78,7 +81,8 @@ function changeZero2(){
     </div>
 <br>
     <div class="conteiner">
-        <h3> Calculadora lose/zero </h3>
+        <h3 class="calcTitle"> Calculadora lose/zero </h3>
+        <p id="prob1"> Probabilidade</p>
         <span id="valorZero"></span>
         <input type="number" id="inputZero1" placeholder="aposta" oninput="changeZero()"> 
         <span id="odd0"></span>
