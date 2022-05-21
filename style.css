@@ -11,7 +11,7 @@
     padding-bottom: 3px;
     margin-left: 4px;
     display: inline-block;
-    width: 105.5px;
+    width: 95.5px;
     color: black;
     border-radius: 20px;
 
@@ -25,25 +25,27 @@
     margin: auto;
     font-size: 14px;
     font-family: cursive;
-    background-color: rgb(104, 172, 41);
+    background-color: rgb(68, 116, 24);
     color: white;
-    background-image: url(./images/apostas-esportivas-2019-638x338.jpg);
+   
     background-repeat: no-repeat;
     
 }
 
-#aposta1, #aposta2{
+#aposta1, #aposta2, #apostaZero, #zero{
 
-    margin-left: 4%;
+    margin-left: 2%;
 }
 
-#result, #result0{
+#result, #backg{
     display: inline-block;
     background-color: white;
+    border-radius: 5px;
+    
 
 }
-#calcTitle{
-    display: inline-block;
+.calcTitle{
+    display: inline;
 }
 
 
@@ -52,7 +54,7 @@ input{
     padding: 3px;
     margin-bottom: 3px;
     margin-left: 4px;
-    width: 100px;
+    width: 90px;
     margin-top: 30px;
     font-family: cursive;
     border-radius: 20px;
@@ -60,28 +62,46 @@ input{
     
 }
 
-#profit, #profit0{
+#profit, #space{
     padding-top: 20px;
     margin-bottom: 10px;
     margin-left: 4px;
 }
 
-#result{
-    border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 15px;
-}
 
 #prob{
     display: inline-block;
-    margin-left: 260px;
+    margin-left: 275px;
     font-size: 15px;
 }
-
+#prob1{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 15px;
+}
+#profit0{
+    display: inline-block;
+    margin-left: 175px;
+    font-size: 15px;
+    
+}
+ 
 
 .probability{
-    margin-left: 130px;;
+    margin-left: 165px;;
 }
+
+.gain{
+   margin-left: 60px;
+   font-weight: 800;
+}
+
+.probability0{
+    margin-left: 60px;
+}
+
+
+
 
 
 

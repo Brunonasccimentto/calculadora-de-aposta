@@ -7,46 +7,6 @@
     <title>Calculadora de apostas</title>
     <link href="./style.css" rel="stylesheet">
 
-    <script>
-
-function changeZero(){
-
-let inputZero1 = document.getElementById("inputZero1").value;
-let valorZero = document.getElementById("valorZero");
-valorZero.innerText = inputZero1;
-
-let inputZero2 = document.getElementById("inputZero2").value;
-let odd0 = document.getElementById("odd0");
-odd0.innerText = inputZero2;
-
-let apostaZero = document.getElementById("apostaZero");
-apostaZero.innerText = parseFloat((inputZero1 * inputZero2).toFixed(2))
-
-apostaZero = parseFloat((inputZero1 * inputZero2).toFixed(2))
-
-}
-
-function changeZero2(){
-
-    let inputZero1 = document.getElementById("inputZero1").value
-    let valorZero = document.getElementById("valorZero").value
-    let inputZero3 = document.getElementById("inputZero3").value
-    let odd02 = document.getElementById("odd02");
-    odd02.innerHTML = inputZero3
-    
-    let p = document.getElementById("apostar0")
-
-    let y = 0
-    
-
-    let input3 = document.getElementById("input3").value
-    
-
-}
-
-
-    </script>
-
 </head>
 
 <body>
@@ -59,7 +19,7 @@ function changeZero2(){
 
     <div class="conteiner">
 
-        <h3 id="calcTitle"> Calculadora win/win</h3>
+        <h3 class="calcTitle"> Calculadora win/win</h3>
         <p id="prob"> Probabilidade </p>
         <span id="valor1"></span>
         <input type="number" id="input1" placeholder="aposta" oninput="change1()"> 
@@ -82,19 +42,25 @@ function changeZero2(){
 <br>
     <div class="conteiner">
         <h3 class="calcTitle"> Calculadora lose/zero </h3>
+        <p id="profit0"> Lucro </p>
         <p id="prob1"> Probabilidade</p>
         <span id="valorZero"></span>
         <input type="number" id="inputZero1" placeholder="aposta" oninput="changeZero()"> 
         <span id="odd0"></span>
-        <input type="number" id="inputZero2" placeholder="odd" oninput="changeZero()"> =
+        <input type="number" id="inputZero2" placeholder="odd" oninput="changeZero(), probability01()"> =
         
-        <span id="apostaZero"> </span> <br>
+        <span id="apostaZero"> </span> <span id="backg" class="gain"> </span>
+        <span class="probability0"></span>
+        <br>
 
-        <p id="apostar0"> valor x </p>
+        <p id="apostar0">0</p>
         <span id="odd02"></span>
-        <input type="number" id="inputZero3" placeholder="odd" onchange="changeZero2()"> = 
+        <input type="number" id="inputZero3" placeholder="odd" oninput="changeZero2(), gain(), probability02()"> =
+        <span id="zero"> </span>  <span class="gain" style="margin-left:70px"> </span> 
+        <span class="probability0"></span>
 
-        <h3 id="profit0"> Lucro = <span id="result0"> </span> </h3>
+        <h3 id="space"> </h3>
+
 
 
     </div>
