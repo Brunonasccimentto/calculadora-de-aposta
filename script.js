@@ -1,4 +1,5 @@
 
+    
 // calculadora win/win
 function change1(){
 
@@ -144,8 +145,10 @@ function probability02(){
                     if (inputZero3 == ""){
                     prob.innerText = ""
                     }
-            }      
-    
+            }     
+            
+            
+
             
 
 

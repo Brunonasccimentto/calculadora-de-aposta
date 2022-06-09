@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
 
 
 #valor1, #odd1, #odd2, #valorZero, #odd0, #odd02{
@@ -17,6 +22,14 @@
 
 }
 
+header{
+    background-color:  rgb(53, 49, 49);
+}
+
+h1{
+    margin:0;
+}
+
 .conteiner{
 
     border:2px solid black;
@@ -27,6 +40,7 @@
     font-family: cursive;
     background-color: rgb(68, 116, 24);
     color: white;
+    position: relative;
    
     background-repeat: no-repeat;
     
@@ -99,6 +113,7 @@ input{
 .probability0{
     margin-left: 60px;
 }
+
 
 
 
