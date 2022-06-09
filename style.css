@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: bisque;
+    background-color: white;
 }
 
 
@@ -23,7 +23,12 @@ body{
 }
 
 header{
-    background-color:  rgb(53, 49, 49);
+    background-color:  rgb(238, 238, 238);
+    width: 1200px;
+    margin: auto;
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 h1{
@@ -34,16 +39,35 @@ h1{
 
     border:2px solid black;
     border-radius: 10px;
-    width: 540px;
+    width: 800px;
     margin: auto;
-    font-size: 14px;
-    font-family: cursive;
-    background-color: rgb(68, 116, 24);
+    font-size: 18px;
+    font-family:inherit;
+    margin-top: 20px;
+    background: linear-gradient(90deg,rgb(76, 129, 27),rgb(18, 85, 29),#143d0b);;
     color: white;
-    position: relative;
-   
-    background-repeat: no-repeat;
+}
+#calcs{
+    margin-top: 100px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.c1{
+    flex-grow: 1;
+    width: 100px;
     
+}
+.c2{
+    width: 70px;
+    text-align: center;
+}
+.c3{
+    width: 100px;
+    text-align: center;
 }
 
 #aposta1, #aposta2, #apostaZero, #zero{
@@ -52,16 +76,10 @@ h1{
 }
 
 #result, #backg{
-    display: inline-block;
-    background-color: white;
-    border-radius: 5px;
     
-
+    background-color: white;
+    border-radius: 5px
 }
-.calcTitle{
-    display: inline;
-}
-
 
 
 input{
@@ -70,10 +88,9 @@ input{
     margin-left: 4px;
     width: 90px;
     margin-top: 30px;
-    font-family: cursive;
+    font-family: inherit;
     border-radius: 20px;
-    
-    
+    font-size: 18px;
 }
 
 #profit, #space{
@@ -82,37 +99,123 @@ input{
     margin-left: 4px;
 }
 
+#prob, #prob1{
+    font-size: 18px;
+}
 
-#prob{
-    display: inline-block;
-    margin-left: 275px;
-    font-size: 15px;
-}
-#prob1{
-    display: inline-block;
-    margin-left: 40px;
-    font-size: 15px;
-}
-#profit0{
-    display: inline-block;
-    margin-left: 175px;
-    font-size: 15px;
-    
-}
- 
 
 .probability{
-    margin-left: 165px;;
+    display: inline-block;
+    margin-top: 44.1px;
 }
 
 .gain{
-   margin-left: 60px;
    font-weight: 800;
+   display: inline-block;
+    margin-top: 44.1px;
 }
 
 .probability0{
-    margin-left: 60px;
+    display: inline-block;
+    margin-top: 44.1px;
 }
+
+.boxText{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    width: 1200px;
+    margin-top: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.text{
+    background-color:  rgb(238, 238, 238) ;
+    
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-bottom: 50px; 
+    flex-shrink: 1;
+}
+
+.sText{
+    padding: 10px;
+}
+
+#calculadora{
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    margin-top: 15px;
+    float: left;
+}
+.ex{
+    padding: 20px;
+}
+
+#proibido{
+    width: 30px;
+}
+
+footer{
+
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top:10px;
+}
+
+@media screen and (max-width: 800px){
+
+    header{
+        width: 90%;
+    }
+    .conteiner{
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .boxText{
+        width: 90%;
+    }
+
+    .ex{
+        width: 400px;
+        padding: 5px;
+    }
+
+    input{
+        font-size: 14px;
+    }
+
+    #prob, #prob1{
+        font-size: 14px;
+    }
+
+    .probability{
+        margin-top: 44px;
+    }
+    .probability0{
+        margin-top: 44px;
+    }
+
+    .gain{
+        margin-top: 44px;
+    }
+
+    .text{
+        font-size: 14px;
+    }
+}
+
+
+
 
 
 

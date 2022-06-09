@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de apostas</title>
     <link href="./style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/calculadora.png">
 
 </head>
 
@@ -14,64 +15,149 @@
 
 <header>
     <h1> Calculadora de apostas</h1>
-    <h2> saiba quanto apostar para sair ganhando em ambos resultados</h2>
+    <h2> Saiba quanto apostar para sair ganhando em ambos resultados!!</h2>
 </header>
 
-    <div class="conteiner">
+    <section id="calcs">
+        <div class="conteiner">
 
-        <h3 class="calcTitle"> Calculadora win/win</h3>
-        <p id="prob"> Probabilidade </p>
-        <span id="valor1"></span>
-        <input type="number" id="input1" placeholder="aposta" oninput="change1()"> 
-        <span id="odd1"> </span>
-        <input type="number" id="input2" placeholder="odd" oninput="change1(), probability1()"> =
-        
-        <span id="aposta1"> </span>
-        <span class="probability"> </span> <br>
-        <p id="valor2">0</p>
+            <div class="box">
+                <div class="rect c1">
 
-        <span id="odd2"></span>
-        <input type="number" id="input3" placeholder="odd"  oninput="change2(), aposta2(), probability2()"> =
-        <span id="aposta2"> </span>
-        <span class="probability"></span>
-    
-        <h3 id="profit"> Lucro = <span id="result"> </span> </h3>
+                <h3 class="calcTitle"> Calculadora win/win</h3>
+                <span id="valor1"></span>
+                <input type="number" id="input1" placeholder="aposta" oninput="change1()"> 
+                <span id="odd1"> </span>
+                <input type="number" id="input2" placeholder="odd" oninput="change1(), probability1()"> =
+                
+                <span id="aposta1"> </span> <br>
+                <p id="valor2">0</p>
+
+                <span id="odd2"></span>
+                <input type="number" id="input3" placeholder="odd"  oninput="change2(), aposta2(), probability2()"> =
+                <span id="aposta2"> </span>
+
+                </div>
+
+            <div class="rect c3">
+                <p id="prob"> Probabilidade </p>
+                <span class="probability"> </span> <br>
+                <span class="probability"></span>
+            </div>
+
+            </div>
         
-        
-    </div>
-<br>
-    <div class="conteiner">
-        <h3 class="calcTitle"> Calculadora lose/zero </h3>
-        <p id="profit0"> Lucro </p>
-        <p id="prob1"> Probabilidade</p>
-        <span id="valorZero"></span>
-        <input type="number" id="inputZero1" placeholder="aposta" oninput="changeZero()"> 
-        <span id="odd0"></span>
-        <input type="number" id="inputZero2" placeholder="odd" oninput="changeZero(), probability01()"> =
-        
-        <span id="apostaZero"> </span> <span id="backg" class="gain"> </span>
-        <span class="probability0"></span>
+            <h3 id="profit"> Lucro = <span id="result"> </span> </h3>
+            
+            
+        </div>
         <br>
+        <div class="conteiner">
 
-        <p id="apostar0">0</p>
-        <span id="odd02"></span>
-        <input type="number" id="inputZero3" placeholder="odd" oninput="changeZero2(), gain(), probability02()"> =
-        <span id="zero"> </span>  <span class="gain" style="margin-left:70px"> </span> 
-        <span class="probability0"></span>
+            <div class="box">
+                <div class="rect c1">
+                    <h3 class="calcTitle"> Calculadora zero </h3>
+                    <span id="valorZero"></span>
+                    <input type="number" id="inputZero1" placeholder="aposta" oninput="changeZero()"> 
+                    <span id="odd0"></span>
+                    <input type="number" id="inputZero2" placeholder="odd" oninput="changeZero(), probability01()"> =
+                    <span id="apostaZero"> </span> 
+                    <br>
 
-        <h3 id="space"> </h3>
+                    <p id="apostar0">0</p>
+                    <span id="odd02"></span>
+                    <input type="number" id="inputZero3" placeholder="odd" oninput="changeZero2(), gain(), probability02()"> = 
+                    <span id="zero"> </span> 
+                </div>
+
+                <div class="rect c2"> 
+
+                    <p id="profit0"> Lucro </p>
+                    <span id="backg" class="gain"> </span>
+                    <br>
+                    <span class="gain"> </span>
+
+                </div>
+                <div class="rect c3">
+
+                    <p id="prob1"> Probabilidade</p>
+                    <span class="probability0"></span> 
+                    <br>
+                    <span class="probability0"></span>
+                    
+                </div>
+
+            </div>
+
+            <h3 id="space"> </h3>
+
+        </div>
+
+    </section>
+
+    <div class="boxText">
+
+    <div class="text">
+        
+        <div class="sText">
+
+        <img id="calculadora" src="./images/calculadora.png" alt="imagem de uma calculadora">
+        <h4> Como funciona a calculadora?</h4>
+        <ul>
+            <li> O primeiro passo é você colocar o valor da aposta e a odd nos lugares indicados da aposta 1.</li>
+            <li> Após a aposta 1 estiver preenchida, deve colocar a segunda odd no local indicado.</li>
+            <li> O calculo é feito automaticamente. </li>
+            <li> A Probabilidade é a % intrinseca que está por trás da odd da banca.</li>
+            <li> Não indicado em apostas de modelo 1x2</li>
+        </ul>
+
+        </div>
 
     </div>
 
-    <div>
-    <h4> Como funciona a calculadora win/win ?</h4>
-    <p> A calculadora win/win serve para calcular qual o valor necessario para apostar no segundo time e sair ganhando em ambos os resultados.    </p>
-    
-    
-    <p> Não indicado em apostas de modelo 1x2</p>
+    <div class="text">
 
-    <script src="script.js"></script>
+        <div class="sText">
+        
+            <h4> Calculadora win/win</h4>
+            <p> A calculadora win/win serve para calcular o valor necessário para apostar no segundo time e igualar as apostas, com base na odd. Podendo sair ganhando em ambos os resultados, ou diluir o prejuizo de uma aposta.</p>
+            <img class="ex" src="./images/Captura de tela .png" alt="exemplo da calculadora win/win">
+            <img class="ex" src="./images/Captura de tela 1.png" alt="exemplo da calculadora win/win">
+
+            <h5> Como o cálculo funciona</h5>
+            <p> O resultado de ambas as apostas sempre será igual. Então o calculo é feito da seguinte maneira:
+                <br><br> 89.00 / 3,32 = 26.81 <br><br> 89 - (50 + 26,81) = 12.19
+            </p>
+
+        </div>
+
     </div>
+
+    <div class="text">
+
+        <div class="sText">
+
+            <h4> Calculadora zero</h4>
+            <p> A calculadora zero serve para calcular o valor necessário na segunda aposta para o resultado ser igual a 0. Dessa forma é possível maximizar os lucros, se ainda acreditar que a aposta 1 vai ser a vencedora, ou zerar o seu prejuizo caso tenha certeza que perdeu a primeira aposta.</p>
+            <img class="ex" src="./images/Captura de tela zero.png" alt="exemplo da calculadora zero">
+            <img class="ex" src="./images/captura de tela zero1.png" alt="exemplo da calculadora zero">
+
+            <h5> Como o cálculo funciona</h5>
+            <p> O resultado da segunda aposta sempre será 0. Funcionando da seguinte maneira:
+                <br><br> X = (Resultado = 0) Y = (Valor da segunda aposta) <br><br> X = 50 + Y <br><br> Y * 1.08 = X <br><br> 1.08Y = 50 + Y <br><br> 1.08Y -Y = 50 <br><br> 0.08Y = 50 <br><br> Y = 50/0.08 <br><br> Y = 625
+             </p>
+        </div>
+
+    </div>
+
+    <footer> 
+
+        <img id="proibido" src="./images/proibido white.png" alt="proibido pra menores de 18 anos">
+         Aviso: site proibido para menores de 18 anos 
+    
+    </footer>
+
+<script src="script.js"></script>
 </body>
 
 </html>
