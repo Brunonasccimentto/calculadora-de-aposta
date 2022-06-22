@@ -25,10 +25,11 @@ body{
 header{
     background-color:  rgb(216, 122, 26);
     width: 100%;
-    margin: auto;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: Montserrat, sans-serif;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
+    
 }
 
 #icon{
@@ -36,6 +37,7 @@ header{
     float: left;
     margin-top: -10px;
     margin-left: -12px;
+    
 }
 
 h3{
@@ -107,7 +109,7 @@ input{
 }
 
 #prob, #prob1, #profit0{
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 
@@ -140,7 +142,7 @@ input{
     margin-top: 100px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
+    
 }
 
 .text{
@@ -154,6 +156,10 @@ input{
     text-align: justify;
     font-family: Montserrat, sans-serif;
     padding: 20px;
+}
+
+.groupImg{
+    text-align: center;
 }
 
 #calculadora{
@@ -180,6 +186,7 @@ footer{
     margin-top:10px;
     width: 100%;
     text-align: center;
+    position: fixed;
 }
 
 @media screen and (max-width: 620px){
@@ -187,34 +194,41 @@ footer{
     .conteiner{
         width: 98%;
         font-size: 0.9em;
+        margin-right: -4;
+    }
+
+    h1{
+        font-size: 1.6em;
     }
 
     .boxText{
-        width: 95%;
+        width: 96%;
+        
     }
 
     .ex{
         width: 350px;
         padding: 5px;
+
     }
 
     input{
         font-size: 0.9em;
     }
 
-    #prob, #prob1{
-        font-size: 1em;
+    #prob, #prob1, #profit0{
+        font-size: 0.9em;
     }
 
     .probability{
-        margin-top: 42.5px;
+        margin-top: 43.5px;
     }
     .probability0{
-        margin-top: 42.5px;
+        margin-top: 44.5px;
     }
 
     .gain{
-        margin-top: 40.5px;
+        margin-top: 42.5px;
     }
 
     .text{
@@ -241,6 +255,7 @@ footer{
     .c2{
         width: 50px;
     }
+
 }
 
 
