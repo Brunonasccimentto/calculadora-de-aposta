@@ -12,18 +12,20 @@ body{
 #valor2, #apostar0{
     background-color: white;
     padding: 2.25px;
-    padding-top: 3px;
-    padding-bottom: 3px;
     margin-left: 4px;
     display: inline-block;
     width: 95.5px;
     color: black;
     border-radius: 20px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
 
 }
 
 header{
-    background-color:  rgb(216, 122, 26);
+    background-color: rgb(235, 135, 35);
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -243,11 +245,11 @@ footer{
     }
 
     input{
-        width: 80px;
+        width: 60px;
     }
 
     #valor2, #apostar0{
-        width: 83.5px;
+        width: 63.5px;
     }
 
     .c1{
@@ -255,6 +257,9 @@ footer{
     }
     .c2{
         width: 50px;
+    }
+    .c3{
+        width: 90px;
     }
 
 }
