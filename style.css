@@ -13,6 +13,7 @@ body{
     background-color: white;
     padding: 2.25px;
     margin-left: 5px;
+    margin-top: -10px;
     display: inline-block;
     width: 90px;
     color: black;
@@ -43,7 +44,14 @@ header{
 }
 
 h3{
-    font-weight: 300;
+    font-weight: 500;
+    margin-left: 2%;
+}
+
+h5{
+    margin-left: 2%;
+    letter-spacing: 1px;
+    font-weight: 100;
 }
 .conteiner{
 
@@ -98,7 +106,7 @@ input{
     margin-bottom: 3px;
     margin-left: 4px;
     width: 90px;
-    margin-top: 30px;
+    margin-top: -10px;
     font-family: Montserrat,sans-serif;
     border-radius: 20px;
     font-size: 0.9em;
@@ -115,23 +123,20 @@ input{
 }
 
 
-.probability{
+.probability, .probability0, .gain{
     display: inline-block;
-    margin-top: 44.1px;
 }
 
-.gain{
-   display: inline-block;
-    margin-top: 41.5px;
+.p1{
+    margin-top: 45px;
+}
+.p2, .g2{
+    margin-top: 62px;
 }
 
-.strong{
+.g1{
+    margin-top: 42px;
     font-weight: 800;
-}
-
-.probability0{
-    display: inline-block;
-    margin-top: 44.1px;
 }
 
 .boxText{
@@ -185,11 +190,9 @@ footer{
     font-size: 1.1em;
     background-color: black;
     color: white;
-    padding: 10px;
-    margin-top:10px;
     width: 100%;
     text-align: center;
-    position: fixed;
+    line-height: 60px;
 }
 
 @media screen and (max-width: 620px){
@@ -223,15 +226,16 @@ footer{
         font-size: 0.9em;
     }
 
-    .probability{
-        margin-top: 43.5px;
+    .p1{
+        margin-top: 47px;
     }
-    .probability0{
-        margin-top: 44.5px;
+    .p2, .g2{
+        margin-top: 62px;
     }
-
-    .gain{
-        margin-top: 42.5px;
+    
+    .g1{
+        margin-top: 43px;
+        font-weight: 800;
     }
 
     .text{

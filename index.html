@@ -28,12 +28,14 @@
                 <div class="rect c1">
 
                 <h3 class="calcTitle"> Calculadora win/win</h3>
+                <h5> Aposta 1</h5>
                 <span id="valor1"></span>
                 <input type="number" id="input1" placeholder="aposta" oninput="change1()"> 
                 <span id="odd1"> </span>
                 <input type="number" id="input2" placeholder="odd" oninput="change1(), probability1()"> =
                 
                 <span id="aposta1"> </span> <br>
+                <h5> Aposta 2</h5>
                 <p id="valor2">0</p>
 
                 <span id="odd2"></span>
@@ -44,8 +46,8 @@
 
             <div class="rect c3">
                 <p id="prob"> Probabilidade </p>
-                <span class="probability"> </span> <br>
-                <span class="probability"></span>
+                <span class="probability p1"> </span> <br>
+                <span class="probability p2" ></span>
             </div>
 
             </div>
@@ -60,6 +62,7 @@
             <div class="box">
                 <div class="rect c1">
                     <h3 class="calcTitle"> Calculadora zero </h3>
+                    <h5> Aposta 1</h5>
                     <span id="valorZero"></span>
                     <input type="number" id="inputZero1" placeholder="aposta" oninput="changeZero()"> 
                     <span id="odd0"></span>
@@ -67,6 +70,7 @@
                     <span id="apostaZero"> </span> 
                     <br>
 
+                    <h5> Aposta 2</h5>
                     <p id="apostar0">0</p>
                     <span id="odd02"></span>
                     <input type="number" id="inputZero3" placeholder="odd" oninput="changeZero2(), gain(), probability02()"> = 
@@ -76,17 +80,17 @@
                 <div class="rect c2"> 
 
                     <p id="profit0"> Lucro </p>
-                    <span id="backg" class="gain strong"> </span>
+                    <span id="backg" class="gain strong g1"> </span>
                     <br>
-                    <span class="gain"> </span>
+                    <span class="gain g2"> </span>
 
                 </div>
                 <div class="rect c3">
 
                     <p id="prob1"> Probabilidade</p>
-                    <span class="probability0"></span> 
+                    <span class="probability0 p1"></span> 
                     <br>
-                    <span class="probability0"></span>
+                    <span class="probability0 p2"></span>
                     
                 </div>
 
@@ -151,13 +155,14 @@
 </div>
 </div>
 
-<script src="script.js"></script>
+<script src="./javascript/calcWin.js"></script>
+<script src="./javascript/calcZero.js"></script>
 </body>
 
 <footer> 
 
     <img id="proibido" src="./images/proibido white.png" alt="proibido pra menores de 18 anos">
-     Aviso: site proibido para menores de 18 anos 
+    <span>Aviso: site proibido para menores de 18 anos </span>
 
 </footer>
 
